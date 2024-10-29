@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LacosEx01")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10e6d9f767e02dd9ac1c779b1b2dd19c10915b8e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LacosEx01")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LacosEx01")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
