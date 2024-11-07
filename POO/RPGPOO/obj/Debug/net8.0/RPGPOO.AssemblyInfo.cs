@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ClasseObjeto")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("RPGPOO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d830726b66330a0bdd310e875f8ac583a82a602a")]
-[assembly: System.Reflection.AssemblyProductAttribute("ClasseObjeto")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ClasseObjeto")]
+[assembly: System.Reflection.AssemblyProductAttribute("RPGPOO")]
+[assembly: System.Reflection.AssemblyTitleAttribute("RPGPOO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

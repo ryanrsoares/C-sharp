@@ -1,24 +1,58 @@
-﻿using Calculador.Classes;
+﻿using Calculator.Classes;
 
-Calculadora numeros = new Calculadora();
+Console.Clear();
+Console.Clear();
 
-Console.WriteLine($"Digite uma opreração (+, -, *, / ou soma, subtração, multiplicação e divisão)");
-string operacao = Console.ReadLine();
+Console.WriteLine($"Bem vindo a sua calculadora online!");
+Console.WriteLine();
+
+Console.WriteLine($"Digite o primeiro numero:");
+float n1 = float.Parse(Console.ReadLine()!);
+
+Console.WriteLine($"Digite o segundo numero:");
+float n2 = float.Parse(Console.ReadLine()!);
 
 
-Console.WriteLine($"Agora digite um numero para a opreração:");
-float n1 = int.Parse(Console.ReadLine()!);
+Calculadora calc = new Calculadora();
 
-Console.WriteLine($"Agora digite outro numero para a opreração:");
-float n2 = int.Parse(Console.ReadLine()!);
-    // numeros.numero1 = n1;
-    // numeros.numero2 = n2;
+calc.numero1 = n1;
 
-if (operacao == "+")
-{
-    numeros.somar();
+calc.numero2 = n2;
+
+
+Console.WriteLine(@$"
+    ---Qual a sua conta?---
+
+    -Opcões-
+
+    1-Somar
+    2-Subtrair
+    3-Multiplicar
+    4-Dividir
+");
+
+Console.WriteLine($"Qual a sua opção?");
+int Escolha = int.Parse(Console.ReadLine()!);
+
+Console.WriteLine();
+
+if(Escolha == 1){
+    calc.Somar();
 }
-else
-{
+
+else if(Escolha == 2){
+    calc.Subtrair();
+}
+
+else if(Escolha == 3){
+    calc.Multiplicar();
+}
+
+else if(Escolha == 4){
+    calc.Dividir();
+}
+
+else{
+    Console.WriteLine($"=== Nenhuma das opções foi escolhida 😦 ===");
     
 }
