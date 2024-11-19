@@ -37,7 +37,7 @@ namespace Construtores.Classes
 
 
 /*
-Altere o programa jofo para que contenha os seguintes elementos:
+Altere o programa jogo para que contenha os seguintes elementos:
     -Menu de Opções
 -       1) Cadastar Jogo
 -       2) Listar Jogo

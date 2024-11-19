@@ -12,25 +12,25 @@ namespace PilaresPOO.Classes.Aprendizagem
         // marca,
         public string ? Marca { get; set; } 
         // modelo
-        public string ? modelo { get; set; }
+        public string ? Modelo { get; set; }
         // cor
-        public string ? cor { get; set; }
+        public string ? Cor { get; set; }
         // potencia
-        public string ? potencia { get; set; }
+        public string ? Potencia { get; set; }
         // qtdPassageiro
-        public int qtdPassageiros { get; set; }
+        public int QtdPassageiros { get; set; }
 
-        public void ligar (){
+        public void Ligar (){
             Console.WriteLine($"vrum-vrum!!!");
             
         }
 
-        public void desligar(){
+        public void Desligar(){
             Console.WriteLine($"vrum");
             
         }
 
-        public void buzinar(){
+        public void Buzinar(){
             Console.WriteLine($"BI-BI");
             
         }

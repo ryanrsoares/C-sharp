@@ -1,0 +1,199 @@
+﻿// // Herança
+// // Abstração
+// // Encapsulamento
+// // Polimorfismo
+
+using PilaresPOO.Classes;
+using PilaresPOO.Classes.Aprendizagem;
+Console.Clear();
+
+
+// // Aluno spada = new Aluno();
+// // spada.Nome = "Herik Spada";
+
+// // Console.WriteLine($"========================================================================================");
+// // Console.WriteLine();
+// // Console.WriteLine($"{spada.Nome} Nasceu com {spada.Idade} anos");
+// // Console.WriteLine();
+// // Console.WriteLine($"========================================================================================");
+
+// // // dados do professor
+// // Professor sam = new Professor(123321);
+// // sam.Nome = "Samanta Melisa";
+// // sam.Idade = 22;
+
+// // // dados do aluno
+// // Aluno menegas = new Aluno();
+// // menegas.Cpf = "123.543.765-53";
+// // menegas.Idade = 50;
+// // menegas.Peso = 95.2f;
+// // menegas.Altura = 1.80f;
+// // menegas.Nome = "Erik Meneghetti";
+// // menegas.Matricula = 696969;
+// // menegas.Curso = "Dev";
+// // menegas.Media = 10.1f;
+
+// // Console.WriteLine($"========================================================================================");
+// // Console.WriteLine();
+
+// // Console.WriteLine($"Curso: {menegas.Curso}");
+// // Console.WriteLine();
+// // Console.WriteLine($"    Professor: {sam.Nome}");
+// // Console.WriteLine();
+// // Console.WriteLine($"    Identificação do(a) professor(a): {sam.NIF}");
+// // Console.WriteLine();
+// // Console.WriteLine();
+
+// // Console.WriteLine($"    Aluno: {menegas.Nome}");
+// // Console.WriteLine();
+// // Console.WriteLine($"    Idade do {menegas.Nome}: {menegas.Idade}");
+// // Console.WriteLine();
+// // Console.WriteLine($"    O peso do {menegas.Nome} é de {menegas.Peso}");
+// // Console.WriteLine();
+// // Console.WriteLine($"    A altura do {menegas.Nome} é de {menegas.Altura}");
+// // Console.WriteLine();
+// // Console.WriteLine($"    A matricula do {menegas.Nome} no curso é: {menegas.Matricula}");
+// // Console.WriteLine();
+// // Console.WriteLine($"    A media do {menegas.Nome} no curso é: {menegas.Media}");
+
+
+// // Console.WriteLine();
+// // Console.WriteLine($"========================================================================================");
+
+
+// //         // veiculos
+
+// //         // props
+// //         // marca, Modelo, Cor, potência, qtdPortas, qtdPassageiro
+
+// //         // métodos
+// //         // ligar, desligar, buzinar
+
+// // // Classes concretas que herdem de Veículo
+
+// // // carro - qtdPortas
+// // // avião - qtdPortas
+// // // moto - 
+
+// Moto motos = new Moto();
+// motos.Modelo = "CB 400 four";
+// motos.Marca = "Honda";
+// motos.Cor = "dourado com preto";
+// motos.Potencia = "40cv";
+// motos.qtdRodas = 4;
+// motos.QtdPassageiros = 2;
+
+// Carro carros = new Carro();
+// carros.Modelo = "Impada 66";
+// carros.Marca = "Chevrolet";
+// carros.Cor = "vermelho";
+// carros.Potencia = "270cv";
+// carros.qtdPorta = 4;
+// carros.QtdPassageiros = 5;
+
+// Aviao avioes = new Aviao();
+// avioes.Modelo = "Boeing 747-8 Intercontinental";
+// avioes.Marca = "Boeing";
+// avioes.Cor = "laranja e branco";
+// avioes.Potencia = "66 500 hp (49 600 kW)";
+// avioes.qtdPorta = 4;
+// avioes.QtdPassageiros = 410 ;
+
+
+// Console.WriteLine($"=====================================================");
+// Console.WriteLine();
+// Console.WriteLine(@$"Carro {carros.Marca} {carros.Modelo} 
+// Cor: {carros.Cor}
+// Potência: {carros.Potencia}
+// Quantidade de portas: {carros.qtdPorta}
+// Quantidade de passageiros: {carros.QtdPassageiros}.");
+
+
+// Console.WriteLine();
+// Console.WriteLine($"=====================================================");
+
+// Console.WriteLine($"=====================================================");
+// Console.WriteLine();
+// Console.WriteLine(@$"Avião {avioes.Marca} - {avioes.Modelo}
+// Cor: {avioes.Cor}
+// Potência: {avioes.Potencia}
+// Quantidade de portas: {avioes.qtdPorta}
+// Quantidade de passageiros: {avioes.QtdPassageiros}");
+// Console.WriteLine();
+// Console.WriteLine($"=====================================================");
+
+// Console.WriteLine($"=====================================================");
+// Console.WriteLine();
+// Console.WriteLine(@$"Moto {motos.Marca} {motos.Modelo}
+// Cor: {motos.Cor}
+// Quantidade de portas: {motos.Potencia}
+// Quantidades de passageiros: {motos.QtdPassageiros}");
+// Console.WriteLine();
+// Console.WriteLine($"=====================================================");
+
+
+
+
+
+
+/******************************* HERANÇA E ABSTRAÇÃO *******************************/
+
+// Personagem personagem = new Guerreiro();
+Mago personagemMago = new Mago();   
+Arqueiro personagemArquiiro = new Arqueiro();
+Guerreiro personagemGuerreiro = new Guerreiro();
+PowerGeneric powerGeneric= new PowerGeneric();
+
+
+// personagem.Atacar();    
+personagemMago.Atacar();
+personagemArquiiro.Atacar();
+personagemGuerreiro.Atacar();
+powerGeneric.Atacar();
+
+
+/*
+-- Atividade a ser feita dentro da pasta Pilares
+
+-- Criar as seguintes classes: Conta, ContaCorrente e ContaPoupanca
+
+* Classe abstrata Conta
+
+Propriedades:
+   Saldo float, Titular string
+Métodos abstratos:
+   Sacar(float valor)
+   Depositar(float valor)
+
+* Classe concreta ContaPoupanca - Herda de Conta
+
+Propriedades:
+   limiteSaque int - quantas vezes pode sacar
+   rendimento float - representa o percentual aplicado ao depósito
+Métodos:
+   Sacar(float valor) - implementa da classe pai
+   Depositar(float valor) - implementa da classe pai
+
+* Classe concreta ContaCorrente - Herda de Conta
+Propriedades:
+   limite float - representa o valor adicional ao saldo
+Métodos:
+   Sacar(float valor) - implementa da classe pai
+   Depositar(float valor) - implementa da classe pai
+   Transferir(float valor, ContaCorrente contaDestino) - representa
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
